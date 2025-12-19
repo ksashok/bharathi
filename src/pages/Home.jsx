@@ -4,11 +4,7 @@ const Home = () => {
     return (
         <div>
             {/* Hero Section */}
-            <section style={{
-                padding: '8rem 0 6rem',
-                position: 'relative',
-                overflow: 'hidden'
-            }}>
+            <section className="hero-section">
                 {/* Background Glows */}
                 <div style={{ position: 'absolute', top: '-20%', left: '20%', width: '500px', height: '500px', background: 'radial-gradient(circle, rgba(255, 94, 58, 0.15) 0%, transparent 70%)', filter: 'blur(50px)' }}></div>
                 <div style={{ position: 'absolute', bottom: '-20%', right: '10%', width: '600px', height: '600px', background: 'radial-gradient(circle, rgba(0, 229, 255, 0.1) 0%, transparent 70%)', filter: 'blur(50px)' }}></div>
@@ -17,13 +13,13 @@ const Home = () => {
                     <span style={{ display: 'inline-block', padding: '0.5rem 1.5rem', background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: '50px', marginBottom: '1.5rem', fontSize: '0.9rem', fontWeight: '600', letterSpacing: '1px', color: 'var(--accent)' }}>
                         EST. 30 YEARS OF EXCELLENCE
                     </span>
-                    <h1 style={{ fontSize: '4.5rem', marginBottom: '1.5rem', fontWeight: '800', lineHeight: 1.1, color: 'var(--text-highlight)' }}>
+                    <h1 className="hero-title">
                         Let's Play <span className="gradient-text">Tamil!</span>
                     </h1>
-                    <p style={{ fontSize: '1.25rem', marginBottom: '3rem', maxWidth: '750px', margin: '0 auto 3rem', color: 'var(--text-main)', opacity: 0.9 }}>
+                    <p className="hero-text">
                         Join Bharathi Academy to explore our rich language and culture through a fun, engaging, and world-class curriculum.
                     </p>
-                    <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center' }}>
+                    <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
                         <Link to="/fees" className="btn btn-primary" style={{ padding: '1rem 3rem', fontSize: '1.1rem' }}>
                             Start Enrolment
                         </Link>
@@ -37,7 +33,7 @@ const Home = () => {
             {/* Intro Section - Floating Stats/Info */}
             <section className="section" style={{ paddingBottom: '2rem' }}>
                 <div className="container">
-                    <div style={{ marginTop: '-5rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2rem', marginBottom: '6rem' }}>
+                    <div className="stats-grid" style={{ marginTop: '-5rem' }}>
                         <div className="glass-card text-center">
                             <h3 style={{ fontSize: '3.5rem', color: 'var(--primary)', marginBottom: '0.5rem', fontWeight: '800', textShadow: '0 0 20px var(--primary-glow)' }}>30+</h3>
                             <p style={{ color: 'var(--text-muted)', fontWeight: '600', letterSpacing: '1px' }}>YEARS EXPERIENCE</p>
@@ -64,17 +60,17 @@ const Home = () => {
             {/* Campuses Preview */}
             <section className="section">
                 <div className="container">
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'end', marginBottom: '3rem' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'end', marginBottom: '3rem', flexWrap: 'wrap', gap: '1rem' }}>
                         <div>
                             <span style={{ color: 'var(--primary)', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '1px' }}>Find Us</span>
-                            <h2 style={{ fontSize: '3rem', color: 'var(--text-highlight)' }}>Our Campuses</h2>
+                            <h2 className="section-title">Our Campuses</h2>
                         </div>
                         <Link to="/locations" className="btn btn-outline">
                             View All Timings &rarr;
                         </Link>
                     </div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+                    <div className="responsive-grid">
                         {[
                             { name: 'Berwick', time: 'Sundays, 10.00am - 12.45pm' },
                             { name: 'Clayton', time: 'Sundays, 1.30pm - 4.00pm' },
@@ -91,7 +87,8 @@ const Home = () => {
                                 <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem', color: 'var(--text-highlight)' }}>{campus.name}</h3>
                                 <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>{campus.time}</p>
                             </Link>
-                        ))}</div>
+                        ))}
+                    </div>
                 </div>
             </section>
 
@@ -100,10 +97,10 @@ const Home = () => {
                 <div className="container">
                     <div className="text-center mb-4">
                         <span style={{ color: 'var(--accent)', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '2px' }}>What's Happening</span>
-                        <h2 style={{ fontSize: '3rem', color: 'var(--text-highlight)' }}>Latest News & Events</h2>
+                        <h2 className="section-title">Latest News & Events</h2>
                     </div>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '2.5rem', marginTop: '3rem' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '2.5rem', marginTop: '3rem' }}>
                         <div className="glass-card" style={{ padding: 0 }}>
                             <div style={{ height: '250px', background: 'var(--secondary)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)' }}>
                                 <span>Event Image Placeholder</span>
