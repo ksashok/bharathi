@@ -14,10 +14,10 @@ const Home = () => {
                 <div style={{ position: 'absolute', bottom: '-20%', right: '10%', width: '600px', height: '600px', background: 'radial-gradient(circle, rgba(0, 229, 255, 0.1) 0%, transparent 70%)', filter: 'blur(50px)' }}></div>
 
                 <div className="container" style={{ position: 'relative', zIndex: 1, textAlign: 'center' }}>
-                    <span style={{ display: 'inline-block', padding: '0.5rem 1.5rem', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '50px', marginBottom: '1.5rem', fontSize: '0.9rem', fontWeight: '600', letterSpacing: '1px', color: 'var(--accent)' }}>
+                    <span style={{ display: 'inline-block', padding: '0.5rem 1.5rem', background: 'var(--bg-card)', border: '1px solid var(--border-color)', borderRadius: '50px', marginBottom: '1.5rem', fontSize: '0.9rem', fontWeight: '600', letterSpacing: '1px', color: 'var(--accent)' }}>
                         EST. 30 YEARS OF EXCELLENCE
                     </span>
-                    <h1 style={{ fontSize: '4.5rem', marginBottom: '1.5rem', fontWeight: '800', lineHeight: 1.1, color: 'white' }}>
+                    <h1 style={{ fontSize: '4.5rem', marginBottom: '1.5rem', fontWeight: '800', lineHeight: 1.1, color: 'var(--text-highlight)' }}>
                         Let's Play <span className="gradient-text">Tamil!</span>
                     </h1>
                     <p style={{ fontSize: '1.25rem', marginBottom: '3rem', maxWidth: '750px', margin: '0 auto 3rem', color: 'var(--text-main)', opacity: 0.9 }}>
@@ -43,7 +43,7 @@ const Home = () => {
                             <p style={{ color: 'var(--text-muted)', fontWeight: '600', letterSpacing: '1px' }}>YEARS EXPERIENCE</p>
                         </div>
                         <div className="glass-card text-center">
-                            <h3 style={{ fontSize: '3.5rem', color: 'white', marginBottom: '0.5rem', fontWeight: '800' }}>7</h3>
+                            <h3 style={{ fontSize: '3.5rem', color: 'var(--text-highlight)', marginBottom: '0.5rem', fontWeight: '800' }}>7</h3>
                             <p style={{ color: 'var(--text-muted)', fontWeight: '600', letterSpacing: '1px' }}>CAMPUSES</p>
                         </div>
                         <div className="glass-card text-center">
@@ -53,7 +53,7 @@ const Home = () => {
                     </div>
 
                     <div className="text-center" style={{ maxWidth: '800px', margin: '0 auto' }}>
-                        <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: 'white' }}>Global Leaders in Tamil Education</h2>
+                        <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem', color: 'var(--text-highlight)' }}>Global Leaders in Tamil Education</h2>
                         <p style={{ fontSize: '1.15rem', color: 'var(--text-muted)' }}>
                             We are committed to preserving our heritage while embracing modern teaching methodologies. Our "Let's Play Tamil" approach makes learning natural and enjoyable for students of all ages.
                         </p>
@@ -67,7 +67,7 @@ const Home = () => {
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'end', marginBottom: '3rem' }}>
                         <div>
                             <span style={{ color: 'var(--primary)', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '1px' }}>Find Us</span>
-                            <h2 style={{ fontSize: '3rem', color: 'white' }}>Our Campuses</h2>
+                            <h2 style={{ fontSize: '3rem', color: 'var(--text-highlight)' }}>Our Campuses</h2>
                         </div>
                         <Link to="/locations" className="btn btn-outline">
                             View All Timings &rarr;
@@ -88,7 +88,7 @@ const Home = () => {
                                 <div style={{ width: '50px', height: '50px', background: 'rgba(255, 94, 58, 0.1)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '1.5rem', color: 'var(--primary)', fontSize: '1.5rem' }}>
                                     📍
                                 </div>
-                                <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem', color: 'white' }}>{campus.name}</h3>
+                                <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem', color: 'var(--text-highlight)' }}>{campus.name}</h3>
                                 <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)' }}>{campus.time}</p>
                             </Link>
                         ))}</div>
@@ -100,28 +100,28 @@ const Home = () => {
                 <div className="container">
                     <div className="text-center mb-4">
                         <span style={{ color: 'var(--accent)', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '2px' }}>What's Happening</span>
-                        <h2 style={{ fontSize: '3rem', color: 'white' }}>Latest News & Events</h2>
+                        <h2 style={{ fontSize: '3rem', color: 'var(--text-highlight)' }}>Latest News & Events</h2>
                     </div>
 
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '2.5rem', marginTop: '3rem' }}>
                         <div className="glass-card" style={{ padding: 0 }}>
-                            <div style={{ height: '250px', background: 'linear-gradient(45deg, #1f2937, #111827)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#4b5563' }}>
+                            <div style={{ height: '250px', background: 'var(--secondary)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)' }}>
                                 <span>Event Image Placeholder</span>
                             </div>
                             <div style={{ padding: '2.5rem' }}>
                                 <span style={{ display: 'inline-block', padding: '0.3rem 1rem', background: 'rgba(255, 94, 58, 0.15)', color: 'var(--primary)', borderRadius: '4px', fontSize: '0.8rem', fontWeight: '700', marginBottom: '1rem', letterSpacing: '1px' }}>ATHLETICS</span>
-                                <h3 style={{ fontSize: '1.75rem', marginBottom: '1rem', color: 'white' }}>Annual Athletics Meet</h3>
+                                <h3 style={{ fontSize: '1.75rem', marginBottom: '1rem', color: 'var(--text-highlight)' }}>Annual Athletics Meet</h3>
                                 <p style={{ color: 'var(--text-muted)', marginBottom: '2rem' }}>Join us for a day of sports, fun, and community spirit at our annual meet.</p>
                                 <Link to="/events" style={{ color: 'var(--accent)', fontWeight: '700', letterSpacing: '0.5px' }}>READ MORE &rarr;</Link>
                             </div>
                         </div>
                         <div className="glass-card" style={{ padding: 0 }}>
-                            <div style={{ height: '250px', background: 'linear-gradient(45deg, #1f2937, #111827)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#4b5563' }}>
+                            <div style={{ height: '250px', background: 'var(--secondary)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--text-muted)' }}>
                                 <span>Event Image Placeholder</span>
                             </div>
                             <div style={{ padding: '2.5rem' }}>
                                 <span style={{ display: 'inline-block', padding: '0.3rem 1rem', background: 'rgba(0, 229, 255, 0.15)', color: 'var(--accent)', borderRadius: '4px', fontSize: '0.8rem', fontWeight: '700', marginBottom: '1rem', letterSpacing: '1px' }}>CULTURE</span>
-                                <h3 style={{ fontSize: '1.75rem', marginBottom: '1rem', color: 'white' }}>Theatre Performance</h3>
+                                <h3 style={{ fontSize: '1.75rem', marginBottom: '1rem', color: 'var(--text-highlight)' }}>Theatre Performance</h3>
                                 <p style={{ color: 'var(--text-muted)', marginBottom: '2rem' }}>Our students showcase their drama skills in a spectacular end-of-year show.</p>
                                 <Link to="/events" style={{ color: 'var(--accent)', fontWeight: '700', letterSpacing: '0.5px' }}>READ MORE &rarr;</Link>
                             </div>

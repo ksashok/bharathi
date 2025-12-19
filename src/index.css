@@ -40,9 +40,48 @@
   --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
   --shadow-lg: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
   --shadow-glow: 0 0 20px var(--primary-glow);
+  --border-color: rgba(255, 255, 255, 0.1);
 
   /* Typography */
   --font-family: 'Outfit', sans-serif;
+}
+
+[data-theme='light'] {
+  /* Vibrant Light Palette */
+  --primary: #FF4400;
+  /* Slightly deeper orange for light bg */
+  --primary-glow: rgba(255, 68, 0, 0.3);
+
+  --secondary: #F0F4F8;
+  /* Light gray-blue bg */
+  --secondary-light: #FFFFFF;
+  /* White for cards */
+
+  --accent: #00B8D4;
+  /* Darker cyan for contrast */
+  --accent-glow: rgba(0, 184, 212, 0.3);
+
+  --text-main: #1A202C;
+  /* Dark gray for text */
+  --text-muted: #4A5568;
+  /* Medium gray */
+  --text-highlight: #000000;
+
+  --bg-body: #F7FAFC;
+  /* Very light gray */
+  --bg-card: rgba(255, 255, 255, 0.85);
+  /* Translucent White */
+  --bg-glass: rgba(255, 255, 255, 0.7);
+
+  /* Gradients */
+  --gradient-brand: linear-gradient(135deg, #FF5E3A 0%, #FF2A68 100%);
+  /* Keep brand logic but maybe tweak? - keeping same is fine usually */
+  --gradient-bg: linear-gradient(to bottom, #F7FAFC, #EDF2F7);
+  --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.4) 100%);
+
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 30px -10px rgba(0, 0, 0, 0.1);
+  --border-color: rgba(0, 0, 0, 0.1);
 }
 
 * {
